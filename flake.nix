@@ -26,7 +26,7 @@
         modules = [
           ({ pkgs, ... }: {
 
-            packages = with pkgs; [ bun ];
+            packages = with pkgs; [ bun nodejs-slim ];
 
             env.LD_LIBRARY_PATH =
               pkgs.lib.makeLibraryPath [ pkgs.stdenv.cc.cc ];
