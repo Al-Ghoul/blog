@@ -16,8 +16,7 @@ import SwupParallelPlugin from '@swup/parallel-plugin';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://Al-Ghoul.github.io",
-  base: "blog",
+  site: "https://alghoul.dev",
   style: {
     scss: {
       includePaths: ['./src/styles']
