@@ -4,7 +4,8 @@
 // Site title and description
 export const SITE_TAB = "AlGhoul";
 export const SITE_TITLE = "AlGhoul's Blog";
-export const SITE_DESCRIPTION = "A personal blog, for projects, translated content, books and the new things I'm learning.";
+export const SITE_DESCRIPTION =
+  "A personal blog, for projects, translated content, books and the new things I'm learning.";
 export const DATE_FORMAT = "ddd MMM DD YYYY";
 
 // User profile information
@@ -60,22 +61,22 @@ export const menuItems = [
 // Social media and contact icons
 export const socialIcons = [
   {
-    href: "https://afdian.net/a/saroprock",
+    href: "https://ko-fi.com/alghoul",
     ariaLabel: "Support my work",
     title: "Support my work",
-    svg: "support",
+    svg: "kofi",
   },
   {
-    href: "https://github.com/EveSunMaple",
+    href: "https://www.linkedin.com/in/abdo-alghoul/",
+    ariaLabel: "LinkedIn",
+    title: "LinkedIn",
+    svg:"linkedin",
+  },
+  {
+    href: "https://github.com/Al-Ghoul",
     ariaLabel: "Github",
     title: "Github",
     svg: "github",
-  },
-  {
-    href: "https://space.bilibili.com/438392347",
-    ariaLabel: "BiliBili",
-    title: "BiliBili",
-    svg: "bilibili",
   },
   {
     href: "/rss.xml",
