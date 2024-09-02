@@ -8,11 +8,11 @@ export const SITE_DESCRIPTION = "A blog template";
 export const DATE_FORMAT = "ddd MMM DD YYYY";
 
 // User profile information
-export const USER_NAME = "EveSunMaple";
+export const USER_NAME = "AlGhoul";
 export const USER_AVATAR = "/profile.webp";
 
 // Server and transition settings
-export const SERVER_URL = "https://demo.saroprock.com";
+export const SERVER_URL = "https://alghoul.dev/";
 
 // Some informative text on the site
 export const infoTest = {
