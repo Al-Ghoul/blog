@@ -9,7 +9,7 @@ export const DATE_FORMAT = "ddd MMM DD YYYY";
 
 // User profile information
 export const USER_NAME = "AlGhoul";
-export const USER_AVATAR = "/profile.webp";
+export const USER_AVATAR = "/profile.jpeg";
 
 // Server and transition settings
 export const SERVER_URL = "https://alghoul.dev/";
