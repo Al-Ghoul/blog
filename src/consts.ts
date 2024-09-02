@@ -69,13 +69,6 @@ export const menuItems = [
     svg: "project",
     target: "_self",
   }, // Projects page
-  {
-    id: "contact",
-    text: "Contact",
-    href: "mailto:contact.evesunmaple@outlook.com", // Contact email
-    target: "_blank", // Open in a new tab
-    svg: "contact",
-  },
 ];
 
 // Social media and contact icons
