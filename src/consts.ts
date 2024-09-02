@@ -70,13 +70,6 @@ export const menuItems = [
     target: "_self",
   }, // Projects page
   {
-    id: "friend",
-    text: "Friend",
-    href: "/friend",
-    svg: "friend",
-    target: "_self",
-  }, // Friends page
-  {
     id: "contact",
     text: "Contact",
     href: "mailto:contact.evesunmaple@outlook.com", // Contact email
