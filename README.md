@@ -18,10 +18,21 @@ This blog is based on [Frosti](https://github.com/EveSunMaple/Frosti)
 |    tags     |    Article tags    |    No    |
 |    badge    |   Article badge    |    No    |
 
-## Usage
+## Development [Nix]
+```bash
+# Enter dev env [Nix]
+nix develop --impure
+
+# Install node_modules
+bun install
+
+# Run dev server
+bun run dev
+```
 
 ## Technology
-[Astro](https://astro.build/)
-[TailwindCSS](https://tailwindcss.com/)
-[Pagefind](https://pagefind.app/)
-[daisyUI](https://daisyui.com/)
+- [Astro](https://astro.build/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Pagefind](https://pagefind.app/)
+- [daisyUI](https://daisyui.com/)
+- [Bun](https://bun.sh/)
