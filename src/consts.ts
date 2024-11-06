@@ -32,6 +32,7 @@ export const infoTest = {
 // Menu items for navigation
 export const menuItems = [
   { id: "home", text: "Home", href: "/", svg: "home", target: "_self" }, // Home page
+  { id: "resume", text: "Resume", href: "/resume.pdf", svg: "resume", target: "_self" }, // Home page
   { id: "about", text: "About", href: "/about", svg: "about", target: "_self" }, // About page
   {
     id: "blog",
