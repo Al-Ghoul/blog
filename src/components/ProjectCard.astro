@@ -1,6 +1,6 @@
 ---
 import { Image } from "astro:assets";
-const { title, image, desc, url, badge, target = "_blank" } = Astro.props;
+const { title, image, desc, url, badges, target = "_blank", private_ = false } = Astro.props;
 ---
 
 <div
@@ -15,9 +15,13 @@ const { title, image, desc, url, badge, target = "_blank" } = Astro.props;
       <a class="envelope-title" href={url} target={target}>
         <h1 id={title} class="p-2 m-0">{title}</h1>
       </a>
-      <div class="m-2">{desc}</div>
-      {badge && <div class="badge badge-ghost m-2">{badge}</div>}
-      <div class="m-2 flex">
+    <div class="m-2">{desc}</div>
+    
+    <div class="flex flex-wrap">
+      {badges?.map((badge: string) => <div class="badge badge-ghost m-2">{badge}</div>)}
+    </div>
+    
+    {!private_ ? <div class="m-2 flex">
         <span class="repo-user flex items-center"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +100,7 @@ const { title, image, desc, url, badge, target = "_blank" } = Astro.props;
             ><span class="loading loading-spinner loading-xs"></span></span
           ></span
         >
-      </div>
+      </div> : null}
     </div>
   </div>
   {

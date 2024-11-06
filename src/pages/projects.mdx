@@ -21,13 +21,119 @@ import ProjectJS from "../components/ProjectJS.astro";
   </BaseCard>
   <div class="mt-8 mb-8">
     <ProjectCard
-      title="Blog"
-      image="/images/preview.png"
-      desc="A personal blog, for projects, translated content, books and the new things I'm learning."
-      url="https://github.com/Al-Ghoul/blog"
-      badge="Astro"
+    title="E-Commerce-FullStack"
+      image="/images/e-commerce-preview.png"
+      desc="A RESTful API + Frontend for an E-Commerce application."
+      url="https://github.com/Al-Ghoul/E-CommerceAPI"
+      badges={["NextJS", "ReactJS", "Typescript", "NodeJS", "Docker", "TailwindCSS", "JWT"]}
       target="_self"
     />
-  </div>
+    <ProjectCard
+      title="Fantasy-Namul"
+      image="/images/fs-preview.jpeg"
+      desc="A Fantasy App, It is an online game where you create a virtual team of real cricket players and score points depending on how your chosen players perform in real-life matches."
+      badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
+      target="_self"
+      private_={true}
+    />
+    <ProjectCard
+      title="PKO-Tweak-Server"
+      desc="PTS is a socket server that was made to act as an intermediate between the client and the server to verify & utilize keys."
+      image="/images/pts-preview.png"
+      badges={["Ziglang", "Postgres", "Docker"]}
+      target="_self"
+      private_={true}
+    />
+    <ProjectCard
+      title="PhoenixOnline-Website"
+      image="/images/po-site-review.png"
+      desc="A ToP based site with registration, vote, download, portals timing, mall, award, imps recharge (paypal integration)."
+      badges={["Django", "Python", "Jinja", "Docker", "HTML", "CSS"]}
+      target="_self"
+      private_={true}
+    />
+    <ProjectCard
+      title="BloggingPlatform"
+      image="/images/blog-api-review.png"
+      desc="A blogging platform RESTful API."
+      url="https://github.com/Al-Ghoul/BloggingPlatform-Django"
+      badges={["Django", "Python", "RESTful API"]}
+      target="_self"
+      private_={true}
+    />
+    <ProjectCard
+      title="TodoListAPI"
+      image="/images/todo-list-api-preview.png"
+      desc="A RESTful API that allows users to manage their to-do list."
+      url="https://github.com/Al-Ghoul/TodoListAPI-Laravel"
+      badges={["Laravel", "PHP", "RESTful API"]}
+      target="_self"
+      private_={true}
+    />
+    <ProjectCard
+      title="CS-FlashCards"
+      image="/images/cs-flashcards-preview.gif"
+      desc="A Flash Cards mobile app that aids with memorization."
+      url="https://github.com/Al-Ghoul/CS-FlashCards"
+      badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
+      target="_self"
+    />
+    <ProjectCard
+      title="RochyRD-MusicSite"
+      image="/images/rochyrd-preview.png"
+      desc="A site for music uploads in spanish."
+      url="https://github.com/Al-Ghoul/RochyRD-MusicSite"
+      badges={["NextJS", "ReactJS", "Typescript", "Firebase", "TailwindCSS", ]}
+      target="_self"
+    />
+   <ProjectCard
+      title="Beast-WebSocketServer-Cpp"
+      image="/images/cpp-websocket-preview.png"
+      desc="A WebSocket Server written in C++ using Boost::Beast framework (with JWT auth)."
+      url="https://github.com/Al-Ghoul/Beast-WebSocketServer-Cpp/"
+      badges={["C++", "Boost", "JWT", "CLI"]}
+      target="_self"
+   />
+   <ProjectCard
+      title="Github-Activity"
+      image="/images/github-activity-preview.png"
+      desc="Github Activity is a project used to fetch and display any github user's public events."
+      url="https://github.com/Al-Ghoul/RoadMap.sh-Github-Activity"
+      badges={["Ziglang", "REST-API", "JSON", "CLI"]}
+      target="_self"
+   />
+   <ProjectCard
+      title="TaskTracker"
+      image="/images/task-tracker-preview.png"
+      desc="Task tracker is a project used to track and manage your tasks."
+      url="https://github.com/Al-Ghoul/RoadMap.sh-TaskTracker"
+      badges={["Ziglang", "JSON", "CLI"]}
+      target="_self"
+   />
+   <ProjectCard
+      title="TOP-AdminDashboard"
+      image="/images/top-admin-board-review.png"
+      desc="A page that heavily utilizes CSS Grids "
+      url="https://github.com/Al-Ghoul/TOP-AdminDashboard"
+      badges={["HTML", "CSS", "CSS Grids"]}
+      target="_self"
+   />
+   <ProjectCard
+      title="TodoApp-WebStorageAPI"
+      image="/images/web-storage-preview.png"
+      desc="A page that saves all the data in the browser's storage."
+      url="https://github.com/Al-Ghoul/TodoApp-WebStorageAPI"
+      badges={["HTML", "CSS", "JavaScript", "Web Storage API"]}
+      target="_self"
+   />
+   <ProjectCard
+      title="Blog"
+      image="/images/blog-preview.png"
+      desc="A personal blog, for projects, translated content, books and the new things I'm learning."
+      url="https://github.com/Al-Ghoul/blog"
+      badges={["Astro", "ReactJS", "Typescript", "NodeJS"]}
+      target="_self"
+   />
+</div>
 </BaseLayout>
 <ProjectJS />
