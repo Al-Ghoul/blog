@@ -56,10 +56,10 @@ ssh-keygen -t ed25519
 الآن، عليك إخبار GitHub بمفتاح الـSSH الخاص بك حتى تتمكن من رفع الكود الخاص بك دون كتابة كلمة مرور في كل مرة.
 أولاً، ستنتقل إلى المكان الذي يتلقى فيه GitHub مفتاح SSH الخاص بنا. قم بتسجيل الدخول إلى GitHub وانقر على صورة ملفك الشخصي في الزاوية اليمنى العليا. بعد ذلك، انقر فوق "الإعدادات" في القائمة المنسدلة.
 
-![image.png](/public/posts-images/github-setup/github-tut-settings01.png)
+![image.png](/posts-images/github-setup/github-tut-settings01.png)
 
 بعد ذلك، على الجانب الأيسر، انقر فوق `SSH and GPG keys`. ثم انقر فوق الزر الأخضر في الزاوية اليمنى العليا الذي يشير إلى`New SSH Key`. قم بتسمية مفتاحك بشيء وصفي بما يكفي لتتمكن من تذكر الجهاز الذي جاء منه مفتاح الـSSH هذا، علي سبيل المثال windows-key. اترك هذه النافذة مفتوحة أثناء قيامك بالخطوات التالية.
-![image.png](/public/posts-images/github-setup/github-tut-settings02.png)
+![image.png](/posts-images/github-setup/github-tut-settings02.png)
 
 الآن تحتاج إلى نسخ مفتاح الـSSH العام الخاص بك. للقيام بذلك، سنستخدم الأمر المسمى cat لقراءة الملف إلى وحدة التحكم. (لاحظ أن ملحق الملف .pub مهم في هذه الحالة.)
 ```bash
@@ -69,5 +69,5 @@ cat ~/.ssh/id_ed25519.pub
 و الآن، ارجع إلى GitHub في نافذة المتصفح لديك وقم بلصق المفتاح الذي نسخته في حقل المفتاح.
 احتفظ بنوع المفتاح كما هو `Authentication Key` و من ثم انقر `Add SSH key`.
 إن وصلت إلي هذه الخطوة فقد قمت بإضافة مفتاح الـSSH الخاص بك بنجاح!
-![image.png](/public/posts-images/github-setup/github-tut-settings03.png)
+![image.png](/posts-images/github-setup/github-tut-settings03.png)
 
