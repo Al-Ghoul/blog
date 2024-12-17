@@ -1,10 +1,10 @@
 ---
 title: كيفية تثبيث الـGit 
-published: 2022-07-01
+published: 2022-12-13
 # description: 
 # image: 
-tags: [Git, Tutorial]
-category: Tutorial
+tags: [Git, شروحات]
+category: شروحات
 draft: false
 lang: ar
 ---
