@@ -11,9 +11,8 @@
     "type-check": "tsc --noEmit --isolatedDeclarations",
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
-    "lint": "biome check --apply ./src",
-    "preinstall": "npx only-allow npm"
-  },
+    "lint": "biome check --apply ./src"
+ },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.9",
@@ -53,7 +52,6 @@
     "sharp": "^0.33.5",
     "stylus": "^0.63.0",
     "svelte": "^5.2.2",
-    "svelte-pdf": "^1.0.20",
     "tailwindcss": "^3.4.14",
     "tailwindcss-rtl": "^0.9.0",
     "typescript": "^5.6.3",

@@ -4,7 +4,6 @@ export const ar: Translation = {
   [Key.home]: 'الرئيسية',
   [Key.about]: 'عنا',
   [Key.archive]: 'الأرشيف',
-  [Key.resume]: 'السيرة الذاتية',
   [Key.search]: 'بحث',
   [Key.tags]: 'شعارات',
   [Key.categories]: 'التصنيفات',
