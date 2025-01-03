@@ -81,7 +81,7 @@ function formatTag(tag: string[]) {
                        aria-label={post.data.title}
                        class="group btn-plain !block h-10 w-full rounded-lg hover:text-[initial]"
                     >
-                        <div class="flex flex-row justify-start items-center h-full">
+                    <div class="flex flex-row justify-start items-center h-full">
                             <!-- date -->
                             <div class="w-[15%] md:w-[10%] transition text-sm text-right text-50">
                                 {formatDate(post.data.published)}
@@ -101,7 +101,7 @@ function formatTag(tag: string[]) {
                             <div class="w-[70%] md:max-w-[65%] md:w-[65%] text-left font-bold
                                 group-hover:translate-x-1 transition-all group-hover:text-[var(--primary)]
                                 text-75 pr-8 whitespace-nowrap overflow-ellipsis overflow-hidden"
-                            >
+                           dir={post.data.lang === 'ar' ? "rtl" : "ltr"} >
                                     {post.data.title}
                             </div>
                             <!-- tag list -->

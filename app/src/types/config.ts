@@ -85,4 +85,5 @@ export type BlogPostData = {
   prevSlug?: string
   nextTitle?: string
   nextSlug?: string
+  lang: string
 }
