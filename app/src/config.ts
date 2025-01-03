@@ -8,7 +8,7 @@ import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
   title: 'AlGhoul\'s Blog',
-  subtitle: 'Demo Site',
+  subtitle: "A developer's blog that's meant to be creative, inspirational, educational, and to list my portfolio projects.",
   lang: 'en',         // 'en', 'ar'
   themeColor: {
     hue: 270,         // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
