@@ -7,7 +7,7 @@ import type {
 import { LinkPreset } from './types/config'
 
 export const siteConfig: SiteConfig = {
-  title: 'AlGhoul\'s Blog',
+  title: 'Abdo .AlGhoul',
   subtitle: "A developer's blog that's meant to be creative, inspirational, educational, and to list my portfolio projects.",
   lang: 'en',         // 'en', 'ar'
   themeColor: {
@@ -52,7 +52,7 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'https://avatars.githubusercontent.com/u/29547307',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'AlGhoul',
+  name: 'Abdo .AlGhoul',
   bio: "مادام في القلبِ نية و في العقل رأيٌ و في النفس عزمٌ و في الوقتِ متسع، فكل شئٍ يمكن تداركهْ.",
   links: [
     {
