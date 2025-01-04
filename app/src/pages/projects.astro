@@ -1,6 +1,7 @@
 ---
 
 import MainGridLayout from '../layouts/MainGridLayout.astro'
+import ProjectCard from '../components/ProjectCard.astro'
 import { i18n } from '../i18n/translation'
 import I18nKey from '../i18n/i18nKey'
 
@@ -9,6 +10,61 @@ import I18nKey from '../i18n/i18nKey'
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
       <div class="card-base z-10 px-9 py-6 relative w-full ">
         <h1 class="text-3xl font-bold text-black dark:text-white">Projects</h1>
+        <ProjectCard
+            title="E-Commerce Mobile App"
+            image="/projects-preview-images/e-commerce-app-preview.gif"
+            desc="An E-Commerce mobile app that lists products and allows users to add them to their cart, order and checkout."
+            badges={["ReactNative", "Typescript", "Expo", "PostgreSQL", "TailwindCSS", "E-Commerce", "API Integration"]}
+            target="_self"
+         />
+         <ProjectCard
+            title="E-Commerce Full-Stack Website"
+            image="/projects-preview-images/e-commerce-preview.png"
+            desc="A RESTful API + Frontend for an E-Commerce application."
+            url="https://e-commerce-api-gamma-seven.vercel.app/"
+            badges={["NextJS", "ReactJS", "Typescript", "NodeJS", "Docker", "TailwindCSS", "JWT", "PostgreSQL", "E-Commerce", "REST API"]}
+            target="_self"
+         />
+         <ProjectCard
+             title="Fantasy-Namul Mobile App"
+             image="/projects-preview-images/fantasy-namul-preview.jpeg"
+             desc="A Fantasy App, It is an online game where you create a virtual team of real cricket players and score points depending on how your chosen players perform in real-life matches."
+             badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
+             target="_self"
+             private_={true}
+          />
+          <ProjectCard
+              title="PhoenixOnline Website"
+              image="/projects-preview-images/po-site-review.png"
+              desc="A Tales of Pirates based site with registration, vote, download, portals timing, mall, award, imps recharge (paypal integration)."
+              badges={["Django", "Python", "Jinja", "Docker", "HTML", "CSS"]}
+              target="_self"
+              private_={true}
+          />
+          <ProjectCard
+              title="PKO Tweak Server - A TCP Server"
+              image="/projects-preview-images/pts-preview.png"
+              desc="PTS is a TCP server that was made to act as a proxy between the client and the server to verify & utilize keys."
+              badges={["Ziglang", "PostgreSQL", "Docker"]}
+              target="_self"
+              private_={true}
+          />
+          <ProjectCard
+              title="CS-FlashCards Mobile App"
+              image="/projects-preview-images/cs-flashcards-preview.gif"
+              desc="A Flash Cards mobile app that aids with memorization."
+              url="https://github.com/Al-Ghoul/CS-FlashCards"
+              badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
+              target="_self"
+          />
+          <ProjectCard
+              title="RochyRD - A Music Website"
+              image="/projects-preview-images/rochyrd-preview.png"
+              desc="A site for music uploads in spanish."
+              url="https://rochy-rd-music-site.vercel.app/"
+              badges={["NextJS", "ReactJS", "Typescript", "Firebase", "TailwindCSS", ]}
+              target="_self"
+          />
       </div>
     </div>
 </MainGridLayout>
