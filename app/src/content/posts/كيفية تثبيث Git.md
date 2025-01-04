@@ -3,7 +3,7 @@ title: كيفية تثبيث الـGit
 published: 2022-12-13
 # description: 
 # image: 
-tags: [Git, شروحات]
+tags: [Git, شروحات, عربي]
 category: شروحات
 draft: false
 lang: ar
