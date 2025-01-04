@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+const { title, image, desc, url, badges, target = "_blank", } = Astro.props;
+---
+
+<div
+    class="mt-8 relative w-full overflow-hidden shadow-xl flex flex-col lg:flex-row bg-gray-200 dark:bg-black/10 rounded-lg"
+ >
+  <div
+    class="relative w-full h-auto rounded-3xl overflow-hidden lg:order-1 order-2"
+  >
+    <div
+      class="relative w-full h-full p-6 flex flex-col justify-between"
+    >
+    <h2 id={title} class="p-2 m-0 text-lg text-black dark:text-white">{title}</h2>
+    
+    {url &&
+      <div class="flex flex-row">
+        <span class="m-2 text-black dark:text-white">Live Demo:</span>
+        <a class="m-2 text-black dark:text-white underline" href={url} target={target}>{url}</a>
+      </div>
+      }
+    
+    <div class="m-2 text-black dark:text-white text-sm">{desc}</div>
+
+    <div class="flex flex-wrap">
+      {badges?.map((badge: string) => <div class="m-2 px-2 text-sm border border-black dark:border-white rounded-full text-black dark:text-white">{badge}</div>)}
+    </div>
+    </div>
+  </div>
+  {
+    image && (
+      <div class="relative w-full lg:w-2/5 h-auto rounded-none overflow-hidden lg:order-2 order-1">
+        <Image
+          src={image}
+          alt={title}
+          width="300"
+          height="200"
+          format="webp"
+          loading="eager"
+          class="object-contain w-full h-full hover:scale-125 transition duration-500"
+        />
+      </div>
+    )
+  }
+</div>
