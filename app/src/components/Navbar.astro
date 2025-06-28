@@ -70,7 +70,7 @@ let links: NavBarLink[] = navBarConfig.links.map(
     </div>
     <div class="flex">
       <!--<SearchPanel client:load>-->
-      <Search client:load />
+      <Search client:only="svelte" />
       {
         !siteConfig.themeColor.fixed && (
           <button
