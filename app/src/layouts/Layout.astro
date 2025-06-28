@@ -510,8 +510,8 @@ const bannerOffset =
       wheelToZoom: true,
       arrowPrev: false,
       arrowNext: false,
-      imageClickAction: "close",
-      tapAction: "close",
+      imageClickAction: "zoom",
+      tapAction: "toggle-controls",
       doubleTapAction: "zoom",
     });
 
@@ -536,6 +536,7 @@ const bannerOffset =
       createPhotoSwipe();
     }
     window.swup.hooks.on("page:view", () => {
+      lightbox?.destroy?.();
       createPhotoSwipe();
     });
 

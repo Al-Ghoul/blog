@@ -1,70 +1,260 @@
 ---
-
-import MainGridLayout from '../layouts/MainGridLayout.astro'
-import ProjectCard from '../components/ProjectCard.astro'
-import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
-
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { i18n } from "../i18n/translation";
+import I18nKey from "../i18n/i18nKey";
 ---
-<MainGridLayout title={i18n(I18nKey.projects)} description={i18n(I18nKey.projects)}>
-    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
-      <div class="card-base z-10 px-9 py-6 relative w-full ">
-        <h1 class="text-3xl font-bold text-black dark:text-white">Projects</h1>
-        <ProjectCard
-            title="E-Commerce Mobile App"
-            image="/projects-preview-images/e-commerce-app-preview.gif"
-            desc="An E-Commerce mobile app that lists products and allows users to add them to their cart, order and checkout."
-            badges={["ReactNative", "Typescript", "Expo", "PostgreSQL", "TailwindCSS", "E-Commerce", "API Integration"]}
-            target="_self"
-         />
-         <ProjectCard
-            title="E-Commerce Full-Stack Website"
-            image="/projects-preview-images/e-commerce-preview.png"
-            desc="A RESTful API + Frontend for an E-Commerce application."
-            url="https://e-commerce-api-gamma-seven.vercel.app/"
-            badges={["NextJS", "ReactJS", "Typescript", "NodeJS", "Docker", "TailwindCSS", "JWT", "PostgreSQL", "E-Commerce", "REST API"]}
-            target="_self"
-         />
-         <ProjectCard
-             title="Fantasy-Namul Mobile App"
-             image="/projects-preview-images/fantasy-namul-preview.jpeg"
-             desc="A Fantasy App, It is an online game where you create a virtual team of real cricket players and score points depending on how your chosen players perform in real-life matches."
-             badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
-             target="_self"
-             private_={true}
-          />
-          <ProjectCard
-              title="PhoenixOnline Website"
-              image="/projects-preview-images/po-site-review.png"
-              desc="A Tales of Pirates based site with registration, vote, download, portals timing, mall, award, imps recharge (paypal integration)."
-              badges={["Django", "Python", "Jinja", "Docker", "HTML", "CSS"]}
-              target="_self"
-              private_={true}
-          />
-          <ProjectCard
-              title="PKO Tweak Server - A TCP Server"
-              image="/projects-preview-images/pts-preview.png"
-              desc="PTS is a TCP server that was made to act as a proxy between the client and the server to verify & utilize keys."
-              badges={["Ziglang", "PostgreSQL", "Docker"]}
-              target="_self"
-              private_={true}
-          />
-          <ProjectCard
-              title="CS-FlashCards Mobile App"
-              image="/projects-preview-images/cs-flashcards-preview.gif"
-              desc="A Flash Cards mobile app that aids with memorization."
-              url="https://github.com/Al-Ghoul/CS-FlashCards"
-              badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
-              target="_self"
-          />
-          <ProjectCard
-              title="RochyRD - A Music Website"
-              image="/projects-preview-images/rochyrd-preview.png"
-              desc="A site for music uploads in spanish."
-              url="https://rochy-rd-music-site.vercel.app/"
-              badges={["NextJS", "ReactJS", "Typescript", "Firebase", "TailwindCSS", ]}
-              target="_self"
-          />
-      </div>
+
+<MainGridLayout
+  title={i18n(I18nKey.projects)}
+  description={i18n(I18nKey.projects)}
+>
+  <div
+    class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32"
+  >
+    <div class="card-base z-10 px-9 py-6 relative w-full">
+      <h1 class="text-3xl font-bold text-black dark:text-white">Projects</h1>
+
+      <ProjectCard
+        mediaItems={[
+          {
+            src: "/projects-preview-images/real-estate-api/cover.png",
+          },
+        ]}
+        title="RealEstate API"
+        desc="This is the back-end for RealEstate-App."
+        badges={[
+          "ExpressJS",
+          "Typescript",
+          "Bun",
+          "JWT",
+          "WebSocket",
+          "Drizzle",
+          "Redis",
+          "PostgreSQL",
+          "Docker",
+          "REST API",
+        ]}
+        target="_self"
+      />
+
+      <ProjectCard
+        mediaItems={[
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-1.webm",
+            poster: "/projects-preview-videos/real-estate-rn/cover.gif",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-2.webm",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-3.webm",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-4.webm",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-5.webm",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-6.webm",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-7.webm",
+          },
+          {
+            src: "/projects-preview-videos/real-estate-rn/output-8.webm",
+          },
+        ]}
+        title="RealEstate Mobile App"
+        desc="A real state cross-platform Mobile Application for posting & listing properties."
+        badges={[
+          "ReactNative",
+          "Typescript",
+          "Expo",
+          "React Query",
+          "Zustand",
+          "API Integration",
+        ]}
+        target="_self"
+      />
+
+      <ProjectCard
+        mediaItems={[
+          {
+            src: "/projects-preview-images/e-commerce-rn/cover.gif",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-0.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-1.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-2.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-3.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-4.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-5.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-rn/image-6.png",
+          },
+        ]}
+        title="E-Commerce Mobile App"
+        desc="An E-Commerce mobile app that lists products and allows users to add them to their cart, order and checkout."
+        badges={[
+          "ReactNative",
+          "Typescript",
+          "Expo",
+          "TailwindCSS",
+          "E-Commerce",
+          "API Integration",
+        ]}
+        target="_self"
+      />
+
+      <ProjectCard
+        title="E-Commerce Full-Stack Website"
+        mediaItems={[
+          {
+            src: "/projects-preview-images/e-commerce-site/cover.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-0.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-1.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-2.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-3.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-4.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-5.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-6.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-7.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-8.png",
+          },
+          {
+            src: "/projects-preview-images/e-commerce-site/image-9.png",
+          },
+        ]}
+        desc="A RESTful API + Frontend for an E-Commerce application."
+        url="https://e-commerce-api-gamma-seven.vercel.app/"
+        badges={[
+          "NextJS",
+          "ReactJS",
+          "Typescript",
+          "NodeJS",
+          "Docker",
+          "TailwindCSS",
+          "JWT",
+          "PostgreSQL",
+          "E-Commerce",
+          "REST API",
+        ]}
+        target="_self"
+      />
+
+      <ProjectCard
+        title="Fantasy-Namul Mobile App"
+        mediaItems={[
+          {
+            src: "/projects-preview-images/fantasy-namul-rn/cover.jpeg",
+          },
+          {
+            src: "/projects-preview-images/fantasy-namul-rn/image-0.jpeg",
+          },
+          {
+            src: "/projects-preview-images/fantasy-namul-rn/image-1.jpeg",
+          },
+          {
+            src: "/projects-preview-images/fantasy-namul-rn/image-2.jpeg",
+          },
+          {
+            src: "/projects-preview-images/fantasy-namul-rn/image-3.jpeg",
+          },
+          {
+            src: "/projects-preview-images/fantasy-namul-rn/image-4.jpeg",
+          },
+        ]}
+        desc="A Fantasy App, It is an online game where you create a virtual team of real cricket players and score points depending on how your chosen players perform in real-life matches."
+        badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
+        target="_self"
+        private_={true}
+      />
+
+      <ProjectCard
+        title="PhoenixOnline Website"
+        mediaItems={[
+          {
+            src: "/projects-preview-images/po-site-review.png",
+          },
+        ]}
+        desc="A Tales of Pirates based site with registration, vote, download, portals timing, mall, award, imps recharge (paypal integration)."
+        badges={["Django", "Python", "Jinja", "Docker", "HTML", "CSS"]}
+        target="_self"
+        private_={true}
+      />
+
+      <ProjectCard
+        title="CS-FlashCards Mobile App"
+        mediaItems={[
+          {
+            src: "/projects-preview-images/cs-flashcards-rn/cover.gif",
+          },
+          {
+            src: "/projects-preview-images/cs-flashcards-rn/image-0.gif",
+          },
+        ]}
+        desc="A Flash Cards mobile app that aids with memorization."
+        url="https://github.com/Al-Ghoul/CS-FlashCards"
+        badges={["ReactNative", "Typescript", "Expo", "Firebase"]}
+        target="_self"
+      />
+
+      <ProjectCard
+        title="RochyRD - A Music Website"
+        mediaItems={[
+          {
+            src: "/projects-preview-images/rochyrd-preview.png",
+          },
+        ]}
+        desc="A site for music uploads in spanish."
+        url="https://rochy-rd-music-site.vercel.app/"
+        badges={["NextJS", "ReactJS", "Typescript", "Firebase", "TailwindCSS"]}
+        target="_self"
+      />
+
+      <ProjectCard
+        title="PKO Tweak Server - A TCP Server"
+        mediaItems={[
+          {
+            src: "/projects-preview-images/pts-preview.png",
+          },
+        ]}
+        desc="PTS is a TCP server that was made to act as a proxy between the client and the server to verify & utilize keys."
+        badges={["Ziglang", "PostgreSQL", "Docker"]}
+        target="_self"
+        private_={true}
+      />
     </div>
+  </div>
 </MainGridLayout>
