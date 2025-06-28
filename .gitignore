@@ -24,3 +24,8 @@ pnpm-debug.log*
 
 # Nix related
 .data
+
+# nixago: ignore-linked-files
+/lefthook.yml
+/.conform.yaml
+/treefmt.toml

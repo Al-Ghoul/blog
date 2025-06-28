@@ -8,6 +8,7 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         devshell.url = "github:numtide/devshell";
+        nixago.url = "github:nix-community/nixago";
       };
     };
   };
@@ -17,14 +18,20 @@
     extra-substituters = "https://devenv.cachix.org";
   };
 
-  outputs = {std, ...} @ inputs:
+  outputs = {
+    std,
+    self,
+    ...
+  } @ inputs:
     std.growOn {
       inherit inputs;
       cellsFrom = ./nix;
       cellBlocks = with std.blockTypes; [
         (devshells "shells")
+        (nixago "configs")
+        (installables "packages")
       ];
     } {
-      devShells = std.harvest inputs.self ["repo" "shells"];
+      packages = std.harvest self ["repo" "packages"];
     };
 }
