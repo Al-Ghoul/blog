@@ -53,7 +53,6 @@ const mainPanelTop = siteConfig.banner.enable
   <div
     id="top-row"
     class="z-50 pointer-events-none relative transition-all duration-700 max-w-[var(--page-width)] px-0 md:px-4 mx-auto"
-    class:list={[""]}
   >
     <div
       id="navbar-wrapper"
@@ -68,7 +67,7 @@ const mainPanelTop = siteConfig.banner.enable
     siteConfig.banner.enable && (
       <div
         id="banner-wrapper"
-        class={`absolute z-10 w-full transition duration-700 overflow-hidden`}
+        class="absolute z-10 w-full transition duration-700 overflow-hidden"
         style={`top: -${BANNER_HEIGHT_EXTEND}vh`}
       >
         <ImageWrapper
