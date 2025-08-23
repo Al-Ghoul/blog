@@ -9,7 +9,7 @@
     /\.(mp4|webm|mov|mkv|avi|m4v|ogg|3gp|flv|ogv)$/i.test(src);
 
   const toLightboxElement = (item) => {
-    const src = item.src || item.url || item;
+    const src = "/blog" + (item.src || item.url || item);
     const video = isVideo(src);
 
     return {
@@ -75,7 +75,7 @@
   <div class="w-full h-full cursor-pointer" on:click={() => openAt(0)}>
     {#if /\.(mp4|webm|mov|mkv|avi|m4v|ogg|3gp|flv|ogv)$/i.test(items[0].src || items[0].url)}
       <img
-        src={items[0].poster || "/fallback.jpg"}
+        src={"/blog" + items[0].poster || "/fallback.jpg"}
         alt={items[0].title || ""}
         loading="eager"
         class="object-contain w-full h-full hover:scale-125 transition duration-500"
@@ -83,7 +83,7 @@
       <span class="badge">🎬</span>
     {:else}
       <img
-        src={items[0].src || items[0].url}
+        src={"/blog" + (items[0].src || items[0].url)}
         alt={items[0].title || ""}
         class="object-contain w-full h-full hover:scale-125 transition duration-500"
         loading="eager"
